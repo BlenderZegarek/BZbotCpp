@@ -24,8 +24,10 @@ Currently only Linux system is supported. Tested on Ubuntu 23.10.
 Using apt:
 
 ```
-$ sudo apt install cmake g++ dpp libjsoncpp-dev git
+$ sudo apt install cmake g++ libjsoncpp-dev git
 ```
+
+And download D++ manually from [here](https://dpp.dev/).
 
 ### Download Source Code
 
