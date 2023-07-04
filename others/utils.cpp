@@ -36,15 +36,15 @@ bool read_config() {
 }
 
 bool yes_no() {
-    int klawisz;
+    int key;
 
     do {
 
-        klawisz = getchar();
+        key = getchar();
 
-    } while ((klawisz != 121) && (klawisz != 110));
+    } while ((key != 121) && (key != 110));
 
-    if (klawisz == 121) {
+    if (key == 121) {
 
         return true;
 
