@@ -4,8 +4,6 @@
     </a>
 </div>
 
-</br>
-
 <div align="center"><strong>Discord bot made in D++ library.</strong></div>
 
 # Introduction
