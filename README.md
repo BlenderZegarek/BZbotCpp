@@ -17,6 +17,7 @@ Currently only Linux system is supported. Tested on Ubuntu 23.10.
 ## Dependencies
 
 - cmake ()
+- make ()
 - g++ ()
 - D++ (10.0.24 or later)
 - libjsoncpp-dev (1.9.5-4 or later)
@@ -31,7 +32,7 @@ Currently only Linux system is supported. Tested on Ubuntu 23.10.
 Using apt:
 
 ```
-$ sudo apt install cmake g++ libjsoncpp-dev git
+$ sudo apt install cmake g++ libjsoncpp-dev git make
 ```
 
 And download D++ manually from [here](https://dpp.dev/).
