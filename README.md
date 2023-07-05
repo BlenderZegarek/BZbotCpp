@@ -1,5 +1,5 @@
 <div align="center">
-    <a href="https://github.com/BlenderZegarek/BZbotCpp/">
+    <a href="#">
         <img height="120" src="https://raw.githubusercontent.com/BlenderZegarek/BZbotCpp/main/logo.svg"></svg>
     </a>
 </div>
