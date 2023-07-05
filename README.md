@@ -1,5 +1,12 @@
-# BZbotCpp
-Discord bot made in D++ library.
+<div align="center">
+    <a href="https://github.com/BlenderZegarek/BZbotCpp/">
+        <img height="120" src="https://raw.githubusercontent.com/BlenderZegarek/BZbotCpp/main/logo.svg"></svg>
+    </a>
+</div>
+
+</br>
+
+<div align="center"><strong>Discord bot made in D++ library.</strong></div>
 
 # Introduction
 
