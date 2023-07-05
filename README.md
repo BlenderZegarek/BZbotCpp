@@ -1,6 +1,6 @@
 <div align="center">
     <a href="#">
-        <img height="120" src="https://raw.githubusercontent.com/BlenderZegarek/BZbotCpp/main/logo.svg"></svg>
+        <img height="200" src="https://raw.githubusercontent.com/BlenderZegarek/BZbotCpp/main/logowbg.svg"></svg>
     </a>
 </div>
 
