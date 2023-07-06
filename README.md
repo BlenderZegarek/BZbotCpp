@@ -14,13 +14,13 @@ Currently only Linux system is supported. Tested on Ubuntu 23.10.
 
 ### Dependencies
 
-- cmake ()
-- make ()
-- imagemagick ()
-- g++ ()
-- D++ (10.0.24 or later)
-- libjsoncpp-dev (1.9.5-4 or later)
-- git ()
+- [cmake](https://cmake.org/) (version 3.16 or later)
+- [make](https://www.gnu.org/software/make/) (lasted)
+- [imagemagick](https://imagemagick.org/) (lasted)
+- [g++](https://gcc.gnu.org) (version 8.3 or later)
+- [D++](https://dpp.dev/) (10.0.24 or later)
+- [jsoncpp](https://github.com/open-source-parsers/jsoncpp) (1.9.5-4 or later)
+- [git](https://git-scm.com/) (any version)
 
 # 🧑‍🔧 Setup
 
