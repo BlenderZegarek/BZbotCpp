@@ -4,9 +4,13 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <logicalFolder name="utils" displayName="utils" projectFiles="true">
+        <itemPath>utils/utils.cpp</itemPath>
+        <itemPath>utils/utils.h</itemPath>
+      </logicalFolder>
+      <itemPath>commands/pfp.h</itemPath>
       <itemPath>commands/ping.h</itemPath>
       <itemPath>commands/simple-embed.h</itemPath>
-      <itemPath>others/utils.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -16,9 +20,9 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>main.cpp</itemPath>
+      <itemPath>commands/pfp.cpp</itemPath>
       <itemPath>commands/ping.cpp</itemPath>
       <itemPath>commands/simple-embed.cpp</itemPath>
-      <itemPath>others/utils.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -34,20 +38,23 @@
     <itemPath>.gitignore</itemPath>
     <itemPath>README.md</itemPath>
   </logicalFolder>
+  <sourceRootList>
+    <Elem>utils</Elem>
+  </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="Debug" type="1">
       <toolsSet>
         <compilerSet>default</compilerSet>
         <dependencyChecking>true</dependencyChecking>
-        <rebuildPropChanged>false</rebuildPropChanged>
+        <rebuildPropChanged>true</rebuildPropChanged>
       </toolsSet>
       <compileType>
         <ccTool>
           <standard>12</standard>
           <incDir>
             <pElem>commands</pElem>
-            <pElem>others</pElem>
+            <pElem>utils</pElem>
           </incDir>
         </ccTool>
         <linkerTool>
@@ -59,6 +66,10 @@
       </item>
       <item path="README.md" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="commands/pfp.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="commands/pfp.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="commands/ping.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="commands/ping.h" ex="false" tool="3" flavor2="0">
@@ -69,9 +80,9 @@
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="others/utils.cpp" ex="false" tool="1" flavor2="0">
+      <item path="utils/utils.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="others/utils.h" ex="false" tool="3" flavor2="0">
+      <item path="utils/utils.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -87,6 +98,10 @@
         <ccTool>
           <developmentMode>5</developmentMode>
           <standard>12</standard>
+          <incDir>
+            <pElem>commands</pElem>
+            <pElem>utils</pElem>
+          </incDir>
         </ccTool>
         <fortranCompilerTool>
           <developmentMode>5</developmentMode>
@@ -103,6 +118,10 @@
       </item>
       <item path="README.md" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="commands/pfp.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="commands/pfp.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="commands/ping.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="commands/ping.h" ex="false" tool="3" flavor2="0">
@@ -113,9 +132,9 @@
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="others/utils.cpp" ex="false" tool="1" flavor2="0">
+      <item path="utils/utils.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="others/utils.h" ex="false" tool="3" flavor2="0">
+      <item path="utils/utils.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
     <conf name="createConfig" type="1">
@@ -141,6 +160,10 @@
       </item>
       <item path="README.md" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="commands/pfp.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="commands/pfp.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="commands/ping.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="commands/ping.h" ex="false" tool="3" flavor2="0">
@@ -151,9 +174,9 @@
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="others/utils.cpp" ex="false" tool="1" flavor2="0">
+      <item path="utils/utils.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="others/utils.h" ex="false" tool="3" flavor2="0">
+      <item path="utils/utils.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
   </confs>

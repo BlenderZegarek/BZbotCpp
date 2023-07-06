@@ -24,7 +24,6 @@ bool _simple_embed(const dpp::slashcommand_t& event, int &exit_code) {
                 
     event.reply(dpp::message(event.command.channel_id, embed));
     
-    //event.reply("dziala");
     exit_code = COMMAND_OK;
     
     return true;

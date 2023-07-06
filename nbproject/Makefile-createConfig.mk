@@ -35,10 +35,11 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/commands/pfp.o \
 	${OBJECTDIR}/commands/ping.o \
 	${OBJECTDIR}/commands/simple-embed.o \
 	${OBJECTDIR}/main.o \
-	${OBJECTDIR}/others/utils.o
+	${OBJECTDIR}/utils/utils.o
 
 
 # C Compiler Flags
@@ -64,6 +65,11 @@ LDLIBSOPTIONS=
 bzbotcpp: ${OBJECTFILES}
 	${LINK.cc} -o bzbotcpp ${OBJECTFILES} ${LDLIBSOPTIONS} -ldpp -ljsoncpp
 
+${OBJECTDIR}/commands/pfp.o: commands/pfp.cpp
+	${MKDIR} -p ${OBJECTDIR}/commands
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -Icommands -Iothers -std=c++17 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/commands/pfp.o commands/pfp.cpp
+
 ${OBJECTDIR}/commands/ping.o: commands/ping.cpp
 	${MKDIR} -p ${OBJECTDIR}/commands
 	${RM} "$@.d"
@@ -79,10 +85,10 @@ ${OBJECTDIR}/main.o: main.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -Icommands -Iothers -std=c++17 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
 
-${OBJECTDIR}/others/utils.o: others/utils.cpp
-	${MKDIR} -p ${OBJECTDIR}/others
+${OBJECTDIR}/utils/utils.o: utils/utils.cpp
+	${MKDIR} -p ${OBJECTDIR}/utils
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -Icommands -Iothers -std=c++17 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/others/utils.o others/utils.cpp
+	$(COMPILE.cc) -g -Icommands -Iothers -std=c++17 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/utils/utils.o utils/utils.cpp
 
 # Subprojects
 .build-subprojects:

@@ -8,7 +8,7 @@ bool _ping(const dpp::slashcommand_t& event, int &exit_code) {
     }
                       
     dpp::embed embed = dpp::embed().
-        set_color(0x0d6efd).
+        set_color(0xff00d8).
         set_title("Pong!").
         set_footer(dpp::embed_footer().set_text(event.command.usr.format_username()).set_icon(event.command.usr.get_avatar_url())).
         set_timestamp(time(0));

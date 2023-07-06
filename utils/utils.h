@@ -47,6 +47,7 @@ typedef enum {
     
 } format_code_t;
 
+
 typedef struct {
     
     string token;
@@ -62,4 +63,3 @@ dpp::snowflake config_guildId();
 bool yes_no();
 
 #endif /* UTILS_H */
-

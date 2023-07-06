@@ -8,6 +8,10 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/home/eryk/NetBeansProjects/BZbotCpp/main.cpp</file>
+            <file>file:/home/eryk/NetBeansProjects/BZbotCpp/Makefile</file>
+            <file>file:/home/eryk/NetBeansProjects/BZbotCpp/nbproject/Package-createConfig.bash</file>
+            <file>file:/home/eryk/NetBeansProjects/BZbotCpp/nbproject/Makefile-Debug.mk</file>
+            <file>file:/home/eryk/NetBeansProjects/BZbotCpp/commands/simple-embed.cpp</file>
         </group>
     </open-files>
 </project-private>

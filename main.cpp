@@ -3,6 +3,7 @@
 
 #include "ping.h"
 #include "simple-embed.h"
+#include "pfp.h"
 
 #include "utils.h"
 
@@ -57,7 +58,7 @@ int main(int argc, char* argv[]) {
 
                 cfile.close();
                 
-                print_colored("Created the \"config.json\" file, replace the token and guild id in it", green, reset, true, true);
+                print_colored("created the \"config.json\" file, replace the token and guild id in it", green, reset, true, true);
                 
             }
 
@@ -88,6 +89,7 @@ int main(int argc, char* argv[]) {
         int exit_code = COMMAND_OK;
 
         if (!(_ping(event, exit_code)))
+        if (!(_pfp(event, exit_code)))
         if (!(_simple_embed(event, exit_code)))
         {
 
@@ -123,7 +125,8 @@ int main(int argc, char* argv[]) {
         // bot.global_command_delete_sync(1124780043135111290);
         if (dpp::run_once<struct register_bot_commands>()) {
             _register_ping(bot);
-            _register_simple_embed(bot);   
+            _register_simple_embed(bot);
+            _register_pfp(bot);
         }
     });
 
