@@ -21,7 +21,7 @@ Currently only Linux system is supported. Tested on Ubuntu 23.10.
 - libjsoncpp-dev (1.9.5-4 or later)
 - git ()
 
-# Setup
+# 🧑‍🔧 Setup
 
 ### Install Dependencies
 
