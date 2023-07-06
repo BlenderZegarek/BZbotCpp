@@ -1,18 +1,18 @@
 <div align="center">
     <a href="#">
-        <img height="200" src="https://raw.githubusercontent.com/BlenderZegarek/BZbotCpp/main/logowbg.svg"></svg>
+        <img height="185" src="https://raw.githubusercontent.com/BlenderZegarek/BZbotCpp/main/logowbg.svg"></svg>
     </a>
 </div>
 
 <div align="center"><strong>Discord bot made in D++ library.</strong></div>
 
-# Introduction
+# 👋 Introduction
 
-## Supported Platforms
+### Supported Platforms
 
 Currently only Linux system is supported. Tested on Ubuntu 23.10.
 
-## Dependencies
+### Dependencies
 
 - cmake ()
 - make ()
@@ -22,8 +22,6 @@ Currently only Linux system is supported. Tested on Ubuntu 23.10.
 - git ()
 
 # Setup
-
-## Building
 
 ### Install Dependencies
 
@@ -37,25 +35,24 @@ And download D++ manually from [here](https://dpp.dev/).
 
 ### Download Source Code
 
-First, you have to download source code from GitHub.
 ```
 $ git clone https://github.com/BlenderZegarek/BZbotCpp.git
 $ cd BZbotCpp
 ```
 
-Now, compile this code.
+### Building
 ```
 $ make
 ```
 
-## Create config.json
+# ⚙️ Create config.json
 
 ```
 $ ./bzbotcpp --create-config
 ```
 
 After running this command, the application will create a config file, where you need to enter token and guild id.
-The `config.json` should look like this.
+The `config.json` should look like this:
 
 ```
 {
@@ -64,8 +61,10 @@ The `config.json` should look like this.
 }
 ```
 
-# Running
+# 🏃 Running
+
 To run this bot enter:
+
 ```
 $ ./bzbotcpp
 ```
