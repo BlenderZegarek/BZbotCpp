@@ -54,11 +54,11 @@ int main(int argc, char* argv[]) {
                 
                 cfile.open("config.json", ofstream::out);
 
-                cfile << "{" << endl << "    \"token\" : \"your token here\"," << endl << "    \"guildId\" : 1234567891234567890" << endl << "}" << endl;
+                cfile << "{" << endl << "    \"token\" : \"your token here\"," << endl << "    \"guildId\" : 1234567891234567890" << endl << "    \"colors\": {" << endl << "        \"default\": 10158316," << endl << "        \"success\": 0," << endl << "        \"error\": 0," << endl << "        \"warning\": 0" << endl << "    }" << endl << "}" << endl;
 
                 cfile.close();
                 
-                print_colored("created the \"config.json\" file, replace the token and guild id in it", green, reset, true, true);
+                print_colored("Created the \"config.json\" file, replace the token and guild id in it.", green, reset, true, true);
                 
             }
 
@@ -83,14 +83,16 @@ int main(int argc, char* argv[]) {
     dpp::cluster bot(config_token());
 
     // bot.on_log(dpp::utility::cout_logger());
+    
 
     bot.on_slashcommand([](const dpp::slashcommand_t& event) {
 
         int exit_code = COMMAND_OK;
+        colors_t* colors = config_colors();
 
-        if (!(_ping(event, exit_code)))
-        if (!(_pfp(event, exit_code)))
-        if (!(_simple_embed(event, exit_code)))
+        if (!(_ping(event, exit_code, *colors)))
+        if (!(_pfp(event, exit_code, *colors)))
+        if (!(_simple_embed(event, exit_code, *colors)))
         {
 
             dpp::embed embed = dpp::embed().

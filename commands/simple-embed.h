@@ -1,7 +1,7 @@
 #ifndef SIMPLE_EMBED_H
 #define SIMPLE_EMBED_H
 
-bool _simple_embed(const dpp::slashcommand_t& event, int &exit_code);
+bool _simple_embed(const dpp::slashcommand_t& event, int &exit_code, colors_t colors);
 
 void _register_simple_embed(dpp::cluster& bot);
 

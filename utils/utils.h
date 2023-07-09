@@ -49,9 +49,19 @@ typedef enum {
 
 
 typedef struct {
+    string color_name;
+    uint32_t color_value;
+} color_t;
+
+typedef color_t colors_t[100];
+
+typedef struct {
     
     string token;
     dpp::snowflake guildId;
+    
+    colors_t colors;
+    int num_colors;
     
 } config_t;
 
@@ -59,6 +69,8 @@ bool read_config();
 
 string config_token();
 dpp::snowflake config_guildId();
+colors_t* config_colors();
+uint32_t config_get_color(string name);
 
 bool yes_no();
 

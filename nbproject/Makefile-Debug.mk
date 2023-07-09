@@ -56,7 +56,7 @@ FFLAGS=
 ASFLAGS=
 
 # Link Libraries and Options
-LDLIBSOPTIONS=
+LDLIBSOPTIONS=`pkg-config --libs Magick++`  
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
@@ -68,27 +68,27 @@ bzbotcpp: ${OBJECTFILES}
 ${OBJECTDIR}/commands/pfp.o: commands/pfp.cpp nbproject/Makefile-${CND_CONF}.mk
 	${MKDIR} -p ${OBJECTDIR}/commands
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -Icommands -Iutils -std=c++17 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/commands/pfp.o commands/pfp.cpp
+	$(COMPILE.cc) -g -Icommands -Iutils `pkg-config --cflags Magick++` -std=c++17  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/commands/pfp.o commands/pfp.cpp
 
 ${OBJECTDIR}/commands/ping.o: commands/ping.cpp nbproject/Makefile-${CND_CONF}.mk
 	${MKDIR} -p ${OBJECTDIR}/commands
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -Icommands -Iutils -std=c++17 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/commands/ping.o commands/ping.cpp
+	$(COMPILE.cc) -g -Icommands -Iutils `pkg-config --cflags Magick++` -std=c++17  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/commands/ping.o commands/ping.cpp
 
 ${OBJECTDIR}/commands/simple-embed.o: commands/simple-embed.cpp nbproject/Makefile-${CND_CONF}.mk
 	${MKDIR} -p ${OBJECTDIR}/commands
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -Icommands -Iutils -std=c++17 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/commands/simple-embed.o commands/simple-embed.cpp
+	$(COMPILE.cc) -g -Icommands -Iutils `pkg-config --cflags Magick++` -std=c++17  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/commands/simple-embed.o commands/simple-embed.cpp
 
 ${OBJECTDIR}/main.o: main.cpp nbproject/Makefile-${CND_CONF}.mk
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -Icommands -Iutils -std=c++17 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
+	$(COMPILE.cc) -g -Icommands -Iutils `pkg-config --cflags Magick++` -std=c++17  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
 
 ${OBJECTDIR}/utils/utils.o: utils/utils.cpp nbproject/Makefile-${CND_CONF}.mk
 	${MKDIR} -p ${OBJECTDIR}/utils
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -Icommands -Iutils -std=c++17 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/utils/utils.o utils/utils.cpp
+	$(COMPILE.cc) -g -Icommands -Iutils `pkg-config --cflags Magick++` -std=c++17  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/utils/utils.o utils/utils.cpp
 
 # Subprojects
 .build-subprojects:

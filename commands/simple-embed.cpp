@@ -7,9 +7,11 @@
 
 using namespace std;
 
-bool _simple_embed(const dpp::slashcommand_t& event, int &exit_code) {
+bool _simple_embed(const dpp::slashcommand_t& event, int &exit_code, colors_t colors) {
     
     if (!(event.command.get_command_name() == "simple-embed")) return false;
+    
+    auto usr = event.command.usr;
     
     dpp::command_interaction cmd_data = event.command.get_command_interaction();
     
@@ -19,7 +21,7 @@ bool _simple_embed(const dpp::slashcommand_t& event, int &exit_code) {
         set_color( stoi(cmd_data.get_value<string>(1)) ).
         set_title( cmd_data.get_value<string>(0) ).
         set_description( cmd_data.get_value<string>(2) ).
-        set_footer(dpp::embed_footer().set_text(event.command.usr.format_username()).set_icon(event.command.usr.get_avatar_url())).
+        set_footer(dpp::embed_footer().set_text( (usr.discriminator == 0) ? usr.username : usr.format_username() ).set_icon(usr.get_avatar_url()) ).
         set_timestamp(time(0));
                 
     event.reply(dpp::message(event.command.channel_id, embed));

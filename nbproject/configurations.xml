@@ -59,6 +59,9 @@
         </ccTool>
         <linkerTool>
           <output>bzbotcpp</output>
+          <linkerLibItems>
+            <linkerOptionItem>`pkg-config --libs Magick++`</linkerOptionItem>
+          </linkerLibItems>
           <commandLine>-ldpp -ljsoncpp</commandLine>
         </linkerTool>
       </compileType>
