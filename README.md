@@ -16,7 +16,7 @@ Currently only Linux system is supported. Tested on Ubuntu 23.10.
 
 - [cmake](https://cmake.org/) (version 3.16 or later)
 - [make](https://www.gnu.org/software/make/) (lasted)
-- [imagemagick](https://imagemagick.org/) (lasted)
+- ~~[imagemagick](https://imagemagick.org/) (lasted)~~
 - [g++](https://gcc.gnu.org) (version 8.3 or later)
 - [D++](https://dpp.dev/) (10.0.24 or later)
 - [jsoncpp](https://github.com/open-source-parsers/jsoncpp) (1.9.5-4 or later)
@@ -29,7 +29,7 @@ Currently only Linux system is supported. Tested on Ubuntu 23.10.
 Using apt:
 
 ```
-$ sudo apt install cmake g++ libjsoncpp-dev git make imagemagick*
+$ sudo apt install cmake g++ libjsoncpp-dev git make
 ```
 
 And download D++ manually from [here](https://dpp.dev/).
