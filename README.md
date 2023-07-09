@@ -59,6 +59,12 @@ The `config.json` should look like this:
 {
     "token": "your token here"
     "guildId": 1234567891234567890
+    "colors": {
+        "default": 0,
+        "success": 0,
+        "error": 0,
+        "warning": 0
+    }
 }
 ```
 
