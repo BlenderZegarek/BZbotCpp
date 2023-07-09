@@ -1,11 +1,11 @@
 #include <dpp/dpp.h>
 
-#include <Magick++.h>
+//#include <Magick++.h>
 
 #include "pfp.h"
 
 using namespace std;
-using namespace Magick;
+//using namespace Magick;
 
 bool _pfp(const dpp::slashcommand_t& event, int &exit_code, colors_t colors) {
     
